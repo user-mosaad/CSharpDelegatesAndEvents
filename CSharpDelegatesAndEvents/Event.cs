@@ -26,18 +26,18 @@ class Subscriber
 
 class Program
 {
-    static void Main()
-    {
-        Publisher publisher = new Publisher();
-        Subscriber subscriber = new Subscriber();
+    //static void Main()
+    //{
+    //    Publisher publisher = new Publisher();
+    //    Subscriber subscriber = new Subscriber();
 
-        // Subscribe to the event using +=
-        publisher.OnNotify += subscriber.HandleNotification;
+    //    // Subscribe to the event using +=
+    //    publisher.OnNotify += subscriber.HandleNotification;
 
-        // Trigger the event, notifying all subscribers
-        publisher.RaiseEvent();
+    //    // Trigger the event, notifying all subscribers
+    //    publisher.RaiseEvent();
 
-        // Unsubscribe from the event using -=
-        publisher.OnNotify -= subscriber.HandleNotification;
-    }
+    //    // Unsubscribe from the event using -=
+    //    publisher.OnNotify -= subscriber.HandleNotification;
+    //}
 }
